@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Project</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="maindiv">
+            <H1>Simple Interest Calculator</H1>
+            <form action="" id="mainform">
+                Amount <input type="number"  id="principal">  <br/>
+                <p><label>Interest Rate</label> <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="showRange();"></p>
+                <span id="value_rate">10.25</span> % <br/>
+
+                No. of Years <select id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select> <br/>
+
+                <p><button onclick="compute(); return false;">Compute Interest</button></p>
+            </form>
+            <span id="result" class="result">
+                If you deposit <mark><label id="deposit"></label></mark><br/>
+				at an interest rate of <mark><label id="interest"></label></mark>.<br/>
+				You will receive an amount of <mark><label id="amount"></label></mark>,<br/>
+				in the year <mark><label id="year"></label></mark>
+            </span>
+        <footer>
+
+            &#169; This Calculator belongs to Daniel
+        </footer>
+        </div>
+
+    </body>
+
+
+</html>
